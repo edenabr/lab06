@@ -37,6 +37,10 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y cmake gcc g++ clang
 
+      - name: Clean old build directory
+        run: |
+          rm -rf _build
+
       - name: Configure
         run: |
           cmake -S . -B _build \
