@@ -29,3 +29,5 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
     endif()
   endforeach()
 endif()
+
+include(CPackConfig.cmake)

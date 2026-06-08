@@ -1,20 +1,20 @@
 # Lab05 Tutorial
-В ходе выполнения tutorial была создана лабораторная работа `lab05` на основе предыдущего репозитория `lab04`.
+В ходе выполнения tutorial была создана лабораторная работа `lab06` на основе предыдущего репозитория `lab04`.
 
 ---
 Начальные настроечки и подготовки для выполнения:
 ```bash
 cd "/home/vboxuser/Рабочий стол/project/projects"
 
-rm -rf lab05
+rm -rf lab06
 
-git clone https://github.com/edenabr/lab04.git lab05
+git clone https://github.com/edenabr/lab04.git lab06
 
-cd lab05
+cd lab06
 
 git remote remove origin
 
-git remote add origin https://github.com/edenabr/lab05.git
+git remote add origin https://github.com/edenabr/lab06.git
 
 git config --global user.name "edenabr"
 
@@ -25,12 +25,12 @@ git branch -M main
 alias gsed=sed
 ```
 
-Была создана новая локальная папка `lab05` на основе репозитория `lab04`.
+Была создана новая локальная папка `lab06` на основе репозитория `lab04`.
 
 Команда:
 
 ```bash
-git clone https://github.com/edenabr/lab04.git lab05
+git clone https://github.com/edenabr/lab04.git lab06
 ```
 После этого старый удалённый репозиторий `origin`, который указывал на `lab04`, был удалён:
 
@@ -41,7 +41,7 @@ git remote remove origin
 Затем был добавлен новый удалённый репозиторий:
 
 ```bash
-git remote add origin https://github.com/edenabr/lab05.git
+git remote add origin https://github.com/edenabr/lab06.git
 ```
 
 Команда:
@@ -250,7 +250,7 @@ PY
 Переименование:
 
 ```bash
-sed -i 's/project(lab03)/project(lab05)/g' CMakeLists.txt
+sed -i 's/project(lab03)/project(lab06)/g' CMakeLists.txt
 ```
 
 Так как проект был создан на основе предыдущей лабораторной работы, в `CMakeLists.txt` осталось имя:
@@ -262,7 +262,7 @@ project(lab03)
 Оно было заменено на:
 
 ```cmake
-project(lab05)
+project(lab06)
 ```
 
 ---
@@ -425,7 +425,7 @@ git push -u origin main
 Команда отправляет локальную ветку `main` в удалённый репозиторий:
 
 ```text
-https://github.com/edenabr/lab05.git
+https://github.com/edenabr/lab06.git
 ```
 
 ---
@@ -463,9 +463,9 @@ https://github.com/edenabr/lab05.git
 [100%] Built target gmock_main</pre>
 
 <pre>
-UpdateCTestConfiguration  from :/home/vboxuser/Рабочий стол/project/projects/lab05/_build/DartConfiguration.tcl
-UpdateCTestConfiguration  from :/home/vboxuser/Рабочий стол/project/projects/lab05/_build/DartConfiguration.tcl
-Test project /home/vboxuser/Рабочий стол/project/projects/lab05/_build
+UpdateCTestConfiguration  from :/home/vboxuser/Рабочий стол/project/projects/lab06/_build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/home/vboxuser/Рабочий стол/project/projects/lab06/_build/DartConfiguration.tcl
+Test project /home/vboxuser/Рабочий стол/project/projects/lab06/_build
 Constructing a list of tests
 Done constructing a list of tests
 Updating test list for fixtures
@@ -475,10 +475,10 @@ Checking test dependency graph end
 test 1
     Start 1: check
 
-1: Test command: /home/vboxuser/Рабочий\ стол/project/projects/lab05/_build/check
-1: Working Directory: /home/vboxuser/Рабочий стол/project/projects/lab05/_build
+1: Test command: /home/vboxuser/Рабочий\ стол/project/projects/lab06/_build/check
+1: Working Directory: /home/vboxuser/Рабочий стол/project/projects/lab06/_build
 1: Test timeout computed to be: 10000000
-1: Running main() from /home/vboxuser/Рабочий стол/project/projects/lab05/third-party/gtest/googletest/src/gtest_main.cc
+1: Running main() from /home/vboxuser/Рабочий стол/project/projects/lab06/third-party/gtest/googletest/src/gtest_main.cc
 1: [==========] Running 1 test from 1 test case.
 1: [----------] Global test environment set-up.
 1: [----------] 1 test from Solver
@@ -494,7 +494,7 @@ test 1
 100% tests passed, 0 tests failed out of 1 </pre>
 
 <pre>
-Running main() from /home/vboxuser/Рабочий стол/project/projects/lab05/third-party/gtest/googletest/src/gtest_main.cc
+Running main() from /home/vboxuser/Рабочий стол/project/projects/lab06/third-party/gtest/googletest/src/gtest_main.cc
 [==========] Running 1 test from 1 test case.
 [----------] Global test environment set-up.
 [----------] 1 test from Solver
